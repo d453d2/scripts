@@ -9,6 +9,11 @@ import json
 import os
 import argparse
 
+################################
+# ADD IPINFODB.COM API KEY HERE!
+################################
+api_key =''
+
 parser = argparse.ArgumentParser(description="Queries online records to geolocate the an IP address.\nUses ipinfodb.com - register free for API Key.\n")
 parser.add_argument("ip", default="", help="ip address you wish to query {./IPLocator.py 127.0.0.1}")
 parser.add_argument("-o", default=False, action='store_true', dest='output', help="writes results to json file {./IPLocator.py 127.0.0.1 -o}")
@@ -20,7 +25,6 @@ if args.ip == "":
 	sys.exit("[-] FATAL: Please provide IP Address to look up")
 else:
 	ip = args.ip
-	api_key = 'b8ab341fca3a81884f2909c794401f4c5d91007048f5dabb55fc63ec0fbe5698'
 	url = 'http://api.ipinfodb.com/v3/ip-city/?key=%s&ip=%s&format=json' % (api_key,ip)
 
 # request
