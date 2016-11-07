@@ -62,7 +62,7 @@ if r.status_code == 200:
 
 		# wite out file - scripts function
 		dire = os.getcwd() 
-		fname = dire+"/"+"%s_iplocationdata.txt" % ip
+		fname = dire+"/"+"%s_iplocationdata.json" % ip
 		print "[+] Writing out to file: %s" % fname
 
 		with open(fname, 'w') as f:
