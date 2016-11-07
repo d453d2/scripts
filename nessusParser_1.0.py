@@ -31,7 +31,7 @@ data_imported 		= []
 
 
 print "[--------------------------------------------------------------------------------------------------]"
-print "[i] NMAP XML PARSER"
+print "[i] Nessus XML PARSER"
 print "[i] DAS 2015"
 
 def findDotNessus():
@@ -101,7 +101,7 @@ def processNessusFiles ():
 		global count
 		count = count + 1	
 		
-	print "[+] " +str(count)+ " Nmap files processed."
+	print "[+] " +str(count)+ " Nessus files processed."
 	print "[--------------------------------------------------------------------------------------------------]"
 
 def nessusParser(xmlFile):
