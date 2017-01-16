@@ -12,7 +12,7 @@ from bs4 import BeautifulSoup
 count = 0
 
 directory = str(os.getcwd())
-xFile = str(sys.argv[2]) 		# python nsum.py {outputfile}
+xFile = str(sys.argv[2]) 		# python nmapsum.py {outputfile}
 xmlFile = directory+"/"+xFile
 
 upHosts = []
