@@ -69,6 +69,10 @@ xmlParser(xmlFile);
 print "\n[+] Scanned Host Status: \n"
 print "[+] Up Hosts"
 for host in upHosts:
+	print str(host)
+
+print "\nFor Scan and tool usage:"
+for host in upHosts:
 	print str(host)+",",
 #print "\n[-] Down Hosts"
 #for hosts in downHosts:
